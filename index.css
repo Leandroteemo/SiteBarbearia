@@ -1,124 +1,71 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('imagens/pexels-fotios-photos-1895701.jpg'); /* Caminho da sua imagem de fundo */
-    background-size: cover; /* Cobrir toda a área do body */
+HTML body{
     width: 100%;
     height: 100%;
+    margin: 7px;
+    padding: 0%;
+    background-color: black;
+    overflow-x: hidden;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.escopo {
-    max-width: 100%;
+.cabecalho{
+    position: absolute;
+    width: 99%;
+    height: 50px;
+    background-color:rgba(115, 76, 35, 0.5);;
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 0;
-}
-
-.escopo a {
-    text-decoration: none;
-    font-weight: normal;
-    color: inherit;
-    font-size: 30px;
-    color: beige;
-    padding: 15px;
-    align-items: first baseline;
-}
-
-.escopo a:hover {
-    color: darkorange;
-    transition: color 0.5s ease; /* Transição suave da cor */
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Remove os bullet points */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Adiciona o ícone de tesoura ao lado dos links */
-a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: white; /* Cor do texto normal */
-    position: relative;
-    padding-left: 80px;
     align-items: center;
+    justify-content: space-between;
+}
+.cabecalho ul{display: flex; justify-content: space-between; margin: 0%; list-style-type: none; padding-left: 0px;}
+.zero{width: 100px; }
+.zero p{padding-left: 15px; color: #F3E3D3}
+.cabecalho ul li{margin: 0px;}
+.cabecalho a{color: #F3E3D3; margin: 0%;}
+.um {width: 450px; height: 50px; align-items: center; padding-right: 15px;}
+.um li{width: 150;}
+.um a{width: 150px;text-align: justify;}
+
+
+.fundo{
+    width: 99%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flexbox;
+    z-index: 1;
+    background-size: cover;
 }
 
-a::before {
-    content: '\2702'; /* Código Unicode para o ícone de tesoura */
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
-    font-size: 30px; /* Tamanho do ícone de tesoura */
-    color: inherit; /* Cor inicial do ícone, mesma do texto */
-    transition: color 0.3s ease; /* Transição suave da cor */
+.imagem {
+width: 100%;
+height: 100%;
 }
 
-/* Altera a cor do ícone de tesoura quando o link é hover */
-a:hover::before {
-    color: darkorange; /* Nova cor do ícone ao passar o mouse */
+.background-image:hover {
+    /* Aplica o zoom na imagem de fundo */
+    transform: scale(1.1);}
+
+@media (min-width:1779px){
+.cabecalho{
+    width: 100%;
+    height: 80px;
 }
 
-.escopo2 {
-    max-width: 100%;
-    padding-top: 50px;
+.cabecalho ul{
+    width: 900px;
 }
 
-.escopo2 p {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
+.cabecalho li{
+    padding-right: 50px;
 }
 
-/* Media Queries para Responsividade */
-
-/* Dispositivos com largura máxima de 600px (celulares) */
-@media (max-width: 600px) {
-    .escopo{
-        display: flex;
-        justify-content: center;
-    }
-    .escopo a {
-        font-size: 15px;
-        padding:15px;
-    }
-
-    a::before {
-        font-size: 15px;
-    }
-
-    .escopo2 p {
-        font-size: 18px;
-    }
+.cabecalho p{
+font-size: 45px;
 }
 
-/* Dispositivos com largura máxima de 1024px (tablets) */
-@media (max-width: 1024px) {
-
-
-    .escopo a {
-        font-size: 15px;
-    }
-
-    a::before {
-        font-size: 21px;
-    }
-
-    .escopo2 p {
-        font-size: 18px;
-        padding: 25px;
+.cabecalho a{
+    font-size: 35px;
     }
 }
